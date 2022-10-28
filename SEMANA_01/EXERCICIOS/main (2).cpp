@@ -63,7 +63,67 @@ int armazenaVetor(int *values, int size, int ultPos, int value) {
 // segunda é esta maior distância.
 
 
+string direcaoMenorCaminho(int Vetor[]) {
+  int direita = Vetor[0];
+  int esquerda = Vetor[1];
+  int frente = Vetor[2];
+  int tras = Vetor[3];
 
+  sort(Vetor, Vetor + 4);
+  int maiorNumero = Vetor[3];
+  cout << "distância:" << maiorNumero
+
+  if (maior == direita) {
+    return "Direita";
+  } else if (maior == esquerda) {
+    return "Esquerda";
+  } else if (maior == frente) {
+    return "Frente";
+  } else {
+    return "Tras";
+  }
+
+
+}
+
+
+
+
+// Descomente a função main abaixo para testar o exercício 3
+int main(){
+int numeros[4] = {0, 20, 100, 50};
+
+cout << direcaoMenorCaminho(numeros) << endl;
+}
+
+
+
+// 5 - Faça uma função que pergunta ao usuário se ele deseja continuar o mapeamento e 
+// retorna verdadeiro ou falso
+
+int leComando() {
+  int tecla = 0;
+  cout << "Insira uma tecla:" << endl;
+  cin >> tecla;
+  if (tecla == "sim") {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+// Descomente a função main abaixo para testar o exercício 5
+
+int main() {
+  int parar = 0;
+
+  while (parar == 0) {
+    parar = leComando();
+}
+
+  return 1;
+}
+*/
 
 
 /*
