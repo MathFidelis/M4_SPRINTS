@@ -18,7 +18,7 @@ bool LED1status = LOW;
 int led2 = 2;
 bool LED2status = LOW;
 
-void setup() {
+void setup() {a
   Serial.begin(115200);
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
